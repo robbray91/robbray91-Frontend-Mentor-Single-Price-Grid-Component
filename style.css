@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --pri-cyan: hsl(179, 62%, 43%);
+    --pri-yellow: hsl(71, 73%, 54%);
+    --neu-gray: hsl(204, 43%, 93%);
+    --neu-blue: hsl(218, 22%, 67%);
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+    background: var(--neu-gray);
+    height: 100vh;
+}
+
+.container {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 1.25rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 375px;
+}
+
+.col {
+    padding: .75rem 1.5rem;
+}
+
+.col-top {
+    background: #fff;
+    border-radius: 10px 10px 0 0;
+}
+
+.col-top h2 {
+    color: var(--pri-cyan);
+}
+
+.light-top-para {
+    font-weight: 700;
+    color: var(--pri-yellow);
+}
+
+.faint-top-para {
+    line-height: 2;
+    color: black;
+    opacity: .5;
+    margin: 1.5rem 0;
+}
+
+.col-bottom-left {
+    color: white;
+    background: var(--pri-cyan);
+}
+.col-bottom-left .price-para .price-bold {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.col-bottom-left .price-para .faint-price-info {
+    opacity: .5;
+    margin-left: .5rem;
+}
+
+.col-bottom-left .price-details-para {
+    opacity: .75;
+    margin-bottom: 2.5rem;
+}
+
+.col-bottom-left .sign-up-button {
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    background: var(--pri-yellow);
+    text-align: center;
+    margin-bottom: 1rem;
+    box-shadow: 0px 5px 5px 5px hsla(179, 62%, 23%, .2);
+}
+
+.col-bottom-left .sign-up-button p {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.col-bottom-right {
+    color: white;
+    background: var(--pri-cyan);
+    opacity: .75;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0px 10px 5px 0px rgba(62, 138, 136, 0.15);
+}
+
+.col-bottom-right ul {
+    text-align: left;
+    opacity: .5;
+    line-height: 1.6;
+    padding: 0;
+}
+
+.col-bottom-right li {
+    list-style: none;
+}
+
+footer {
+    text-align: center;
+}
+
+@media (min-width: 800px) {
+    .container {
+        max-width: 1000px;
+
+    }
+    .row {
+        max-width: 100%;
+    }
+    .col {
+        padding: 2rem 4rem;
+    }
+    .col-top h2 {
+        font-size: 2rem;
+    }
+    .light-top-para {
+        padding: 1rem 0;
+        margin: 0;
+        font-size: 1.5rem;
+    }
+    .faint-top-para {
+        padding: 0;
+        margin: 0;
+        line-height: 1.6;
+        padding-bottom: 1.25rem;
+        font-size: 1.25rem;
+    }
+    .col-bottom {
+        display: flex;
+    }
+    .col-bottom-left {
+        width: 50%;
+        border-radius: 0 0 0 10px;
+        box-shadow: 0px 25px 15px 0px hsla(179, 62%, 23%, .15);
+    }
+    .col-bottom-right {
+        width: 50%;
+        border-radius: 0 0 10px 0;
+        box-shadow: 0px 25px 15px 0px hsla(179, 62%, 23%, .15);
+    }
+}
